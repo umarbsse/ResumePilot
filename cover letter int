@@ -1,0 +1,59 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\usepackage[hidelinks]{hyperref}
+\usepackage[none]{hyphenat}
+\sloppy
+\emergencystretch=3em
+\linespread{1.0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+\pagestyle{empty}
+\begin{document}
+\normalsize
+
+\begin{center}
+{\fontsize{16pt}{17pt}\selectfont \textbf{Umer Shahzad}}\\[4pt]
+\textbf{Laravel / PHP Developer | REST APIs | MySQL | Secure Web Applications | AWS}\\[4pt]
+\href{mailto:umarbsse@gmail.com}{umarbsse@gmail.com} \;|\;
+\href{https://www.linkedin.com/in/umershahzad1/}{linkedin.com/in/umershahzad1} \;|\;
+\href{https://github.com/umarbsse}{github.com/umarbsse} \;|\;
+\href{tel:+923705209443}{+92-370-5209443}
+\end{center}
+
+\vspace{10pt}
+\textbf{Hiring Manager}\\
+Tech Solutions Pro\\
+Gulberg Greens, Islamabad
+\vspace{8pt}
+
+\textbf{Subject: Application for PHP / Laravel Developer}
+\vspace{8pt}
+
+Dear Hiring Manager,
+
+I am writing to apply for the PHP / Laravel Developer position at Tech Solutions Pro. With more than 10 years of software-development experience, including over eight years of hands-on Laravel and PHP development, I have designed, developed, maintained, and supported secure, scalable, and high-performance web applications, RESTful APIs, database-driven platforms, and third-party integrations.
+
+In my current role as Manager (Technical) and Senior Laravel Developer at NESCOM, I lead the development lifecycle from requirements and solution design through implementation, testing, production deployment, troubleshooting, and ongoing support. I develop PHP 8.x and Laravel applications using MVC and object-oriented principles, reusable service layers, Eloquent ORM, validation components, REST APIs, and external-service integrations while maintaining a strong focus on clean, maintainable, and secure code.
+
+Database performance and application scalability are important parts of my work. I have improved API and relational-database response times by up to 50\% through MySQL and PostgreSQL schema refinement, indexing, optimized joins, Eloquent query optimization, and Redis caching. Earlier in my career, I reduced response times for data-intensive reports by up to 70\% through MySQL schema, indexing, and complex-query improvements.
+
+I also have extensive experience building and consuming RESTful APIs and integrating third-party services. My work includes Stripe and PayPal payment integrations, secure webhook processing, external APIs, CRON-based processing, asynchronous workflows, error handling, logging, and reliable backend integrations. I have implemented authentication and authorisation using JWT, Laravel Sanctum, OAuth 2.0, RBAC, secure sessions, validation controls, and API security best practices.
+
+One of my relevant projects is PayPerInstall, a Laravel/MySQL-based high-load advertising platform processing more than 200,000 daily click events. I developed campaign tracking, reporting, Redis caching, payment workflows, webhook-driven integrations, traffic validation, and fraud-detection controls. These improvements reduced fraudulent activity by 30--40\% while strengthening platform reliability.
+
+My responsibilities also include automated testing with PHPUnit, Git-based version-control workflows, code reviews, technical documentation, debugging, root-cause analysis, and production deployments across Docker, Linux, Apache, and AWS environments. I regularly collaborate with engineers, stakeholders, and cross-functional teams to troubleshoot issues and deliver reliable software solutions.
+
+Tech Solutions Pro's requirement for a developer who can build and maintain Laravel applications, develop RESTful APIs, optimize MySQL databases, integrate external services, implement secure authentication, improve application performance, and support production deployments closely aligns with my hands-on experience. As an Islamabad-based software engineer, I am also well positioned for the on-site role in Gulberg Greens.
+
+Thank you for considering my application. I look forward to discussing how my experience can contribute to your development team.
+
+Sincerely,\\
+\vspace{10pt}
+\textbf{Umer Shahzad}
+\end{document}
