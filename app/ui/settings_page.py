@@ -18,7 +18,7 @@ class SettingsPage(ttk.Frame):
         )
         ttk.Label(
             self,
-            text="Store the prompts and LaTeX resumes used by the Job Apply page.",
+            text="Store the prompts and LaTeX resumes used by the Generate AI Prompt page.",
         ).grid(row=1, column=0, sticky="w", pady=(0, 16))
 
         body = ttk.Frame(self)

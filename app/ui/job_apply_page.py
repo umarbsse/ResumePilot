@@ -28,7 +28,7 @@ class JobApplyPage(ttk.Frame):
         header = ttk.Frame(self)
         header.grid(row=0, column=0, sticky="ew", pady=(0, 4))
         header.columnconfigure(0, weight=1)
-        ttk.Label(header, text="Job Apply", style="Title.TLabel").grid(row=0, column=0, sticky="w")
+        ttk.Label(header, text="Generate AI Prompt", style="Title.TLabel").grid(row=0, column=0, sticky="w")
         ttk.Button(header, text="+ Add New Job", command=self.new_job, style="Primary.TButton").grid(
             row=0, column=1, sticky="e"
         )

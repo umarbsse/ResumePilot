@@ -50,7 +50,7 @@ class MainWindow(tk.Tk):
         for page in self.pages.values():
             page.grid(row=0, column=0, sticky="nsew")
 
-        ttk.Button(sidebar, text="Job Apply", style="Nav.TButton", command=lambda: self.show_page("job")).pack(
+        ttk.Button(sidebar, text="Generate AI Prompt", style="Nav.TButton", command=lambda: self.show_page("job")).pack(
             fill="x", pady=3
         )
         ttk.Button(sidebar, text="Settings", style="Nav.TButton", command=lambda: self.show_page("settings")).pack(
@@ -62,7 +62,7 @@ class MainWindow(tk.Tk):
     def show_page(self, name: str) -> None:
         page = self.pages[name]
         if name == "job" and isinstance(page, JobApplyPage):
-            # Refresh saved values every time the user opens Job Apply.
+            # Refresh saved values every time the user opens Generate AI Prompt.
             page.new_job()
         elif name == "settings" and isinstance(page, SettingsPage):
             page.load_settings()
