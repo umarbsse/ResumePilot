@@ -14,12 +14,14 @@ ResumePilot provides a Settings page where the following values are saved locall
 - Cover Letter Prompt
 - User LaTeX Resume Code (International)
 - User LaTeX Resume Code (Local)
+- Cover letter resume code (International)
+- Cover letter resume code (Local)
 
 Click **Save Settings** to persist the values in the local SQLite database.
 
-### Generate AI Prompt
+### Job Apply
 
-The Generate AI Prompt page provides an **Add New Job** workflow with:
+The Job Apply page provides an **Add New Job** workflow with:
 
 - AI Prompt loaded from Settings
 - Job Description entered by the user
@@ -105,13 +107,13 @@ sudo apt install python3-tk
 
 ## Processing Logic
 
-The Process button validates the required Generate AI Prompt fields and combines them with blank lines between each section:
+The Process button validates the required Job Apply fields and combines them with blank lines between each section:
 
 1. AI Prompt
 2. Job Description
 3. Selected User LaTeX Resume Code
 
-Changes made directly on the Generate AI Prompt page apply only to the current job. To update persisted defaults, edit them on the Settings page and click **Save Settings**.
+Changes made directly on the Job Apply page apply only to the current job. To update persisted defaults, edit them on the Settings page and click **Save Settings**.
 
 ## Planned Extensions
 
