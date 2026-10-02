@@ -10,6 +10,7 @@ class AppSettings:
     cover_letter_prompt: str = ""
     latex_resume_international: str = ""
     latex_resume_local: str = ""
+    latex_resume_educational: str = ""
     cover_letter_resume_international: str = ""
     cover_letter_resume_local: str = ""
 
@@ -19,6 +20,7 @@ class SettingsRepository:
     COVER_LETTER_PROMPT = "cover_letter_prompt"
     LATEX_RESUME_INTERNATIONAL = "latex_resume_international"
     LATEX_RESUME_LOCAL = "latex_resume_local"
+    LATEX_RESUME_EDUCATIONAL = "latex_resume_educational"
     COVER_LETTER_RESUME_INTERNATIONAL = "cover_letter_resume_international"
     COVER_LETTER_RESUME_LOCAL = "cover_letter_resume_local"
 
@@ -35,22 +37,37 @@ class SettingsRepository:
         return AppSettings(
             ai_prompt=values.get(self.AI_PROMPT, ""),
             cover_letter_prompt=values.get(self.COVER_LETTER_PROMPT, ""),
-            latex_resume_international=values.get(self.LATEX_RESUME_INTERNATIONAL, ""),
-            latex_resume_local=values.get(self.LATEX_RESUME_LOCAL, ""),
+            latex_resume_international=values.get(
+                self.LATEX_RESUME_INTERNATIONAL, ""
+            ),
+            latex_resume_local=values.get(
+                self.LATEX_RESUME_LOCAL, ""
+            ),
+            latex_resume_educational=values.get(
+                self.LATEX_RESUME_EDUCATIONAL, ""
+            ),
             cover_letter_resume_international=values.get(
                 self.COVER_LETTER_RESUME_INTERNATIONAL, ""
             ),
-            cover_letter_resume_local=values.get(self.COVER_LETTER_RESUME_LOCAL, ""),
+            cover_letter_resume_local=values.get(
+                self.COVER_LETTER_RESUME_LOCAL, ""
+            ),
         )
 
     def save(self, settings: AppSettings) -> None:
         items = {
             self.AI_PROMPT: settings.ai_prompt,
             self.COVER_LETTER_PROMPT: settings.cover_letter_prompt,
-            self.LATEX_RESUME_INTERNATIONAL: settings.latex_resume_international,
-            self.LATEX_RESUME_LOCAL: settings.latex_resume_local,
-            self.COVER_LETTER_RESUME_INTERNATIONAL: settings.cover_letter_resume_international,
-            self.COVER_LETTER_RESUME_LOCAL: settings.cover_letter_resume_local,
+            self.LATEX_RESUME_INTERNATIONAL:
+                settings.latex_resume_international,
+            self.LATEX_RESUME_LOCAL:
+                settings.latex_resume_local,
+            self.LATEX_RESUME_EDUCATIONAL:
+                settings.latex_resume_educational,
+            self.COVER_LETTER_RESUME_INTERNATIONAL:
+                settings.cover_letter_resume_international,
+            self.COVER_LETTER_RESUME_LOCAL:
+                settings.cover_letter_resume_local,
         }
 
         with self.database.connection() as connection:
